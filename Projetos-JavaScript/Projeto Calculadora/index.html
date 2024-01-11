@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/js/script.js"></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <button class="btn operador" onclick="clique('+')">+</button>
+        <button class="btn operador" onclick="clique('-')">-</button>
+        <button class="btn operador" onclick="clique('*')">x</button>
+        <button class="btn operador" onclick="clique('/')">/</button>
+        <button class="btn" onclick="clique('7')">7</button>
+        <button class="btn" onclick="clique('8')">8</button>
+        <button class="btn" onclick="clique('9')">9</button>
+        <button class="btn" onclick="limparDisplay()">C</button>
+        <button class="btn" onclick="clique('4')">4</button>
+        <button class="btn" onclick="clique('5')">5</button>
+        <button class="btn" onclick="clique('6')">6</button>
+        <button class="btn" onclick="clique('0')">0</button>
+        <button class="btn" onclick="clique('1')">1</button>
+        <button class="btn" onclick="clique('2')">2</button>
+        <button class="btn" onclick="clique('3')">3</button>
+        <button class="btn" onclick="clique('.')">.</button>
+        <button class="btn" onclick="calculaResultado()" id="equals">=</button>
+    </div>
+</body>
+</html>

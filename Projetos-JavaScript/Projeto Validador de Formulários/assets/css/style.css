@@ -1,0 +1,118 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.screen{
+    display: flex;
+    height: 100vh;
+}
+
+.left-side{
+    flex: 1;
+    background-image: url('../images/astronaut.jpg');
+    width: 80%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left-side img{
+    width: 800px;
+    height: 100vh;
+}
+
+.right-side{
+    width: 500px;
+    background-color: #000;
+    color: #fff;
+    padding: 50px;
+}
+
+.right-side fieldset{
+    padding: 30px;
+    border: 1px solid #023a83;
+}
+
+h1{
+    padding-left: 8px;
+    padding-right: 8px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.right-side legend{
+    text-align: center;
+    
+}
+
+.right-side label{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.right-side input{
+    background-color: #010204;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #999;
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+.right-side input:focus{
+    border-bottom: 2px solid #023a83;
+}
+
+.right-side a{
+    color: #fff;
+}
+
+.right-side a:hover{
+    color: #ccc;
+}
+
+.right-side #button{
+    width: 100%;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 14px;
+    background-color: #023a83;
+    border: 1px solid #035acc;
+    cursor: pointer;
+    color: #fff;
+}
+
+#button:hover {
+    background-color: #035acc;
+    border: 1px solid #023a83;
+    color: #fff;
+}
+
+.error {
+    font-size: 11px;
+    padding: 4px;
+    color: #A6032F;
+}
+.login,
+.autoria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login a,
+.autoria a {
+    text-decoration: none;
+    margin-left: 3px;
+}
+.login a:hover,
+.autoria a:hover {
+    color: #035acc;
+}
+.autoria {
+    margin-top: 40px;
+}

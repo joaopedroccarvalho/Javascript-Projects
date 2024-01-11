@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Formulário</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/js/script.js"></script>
+</head>
+<body>
+    <div class="screen">
+        <div class="left-side">
+            <!-- <img src="assets/images/financial_data.png" alt=""> -->
+        </div>
+        <div class="right-side">
+            <fieldset>
+                <legend><h1>Crie uma conta</h1></legend>
+
+                <form method="POST" action="cadastro.PHP" class="validator">
+                    <label>
+                        Seu nome <br>
+                        <input type="text" name="name" data-rules="required|min=2">
+                    </label>
+                    <label>
+                        Seu e-mail <br>
+                        <input type="email" name="email" data-rules="required|email">
+                    </label>
+                    <label>
+                        Sua senha <br>
+                        <input type="password" name="password" data-rules="required|min=4">
+                    </label>
+                    <label>
+                        <input type="submit" value="Cadastrar" id="button">
+                    </label>
+                </form>
+
+                <div class="login">
+                    Já tem uma conta? Faça seu <a href="">Login</a>
+                </div>
+            </fieldset>
+            <div class="autoria">
+                ©2023 - developed by <a href="https://github.com/joaopedroccarvalho" target="_blank">João Pedro</a>.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

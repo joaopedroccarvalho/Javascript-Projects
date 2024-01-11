@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative; /* Adiciona position:relative para criar um contexto de empilhamento para o ::before */
+    overflow: hidden; /* Garante que qualquer conteúdo extra não ultrapasse o body */
+}
+
+body::before {
+    content: "";
+    background: rgba(15, 15, 15, 0.678); /* Ajuste o valor do canal alfa conforme necessário */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca o ::before atrás do conteúdo do body */
+}
+
+body::after {
+    content: "";
+    background: url(../images/download.png);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: left;
+    background-size: cover;
+    z-index: -2; /* Coloca o ::after atrás de tudo */
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 8px;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+}
+
+.display {
+    grid-column: span 4;
+    background-color: #222;
+    color: #f4f4f4;
+    font-size: 1.5em;
+    text-align: right;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.btn {
+    font-size: 1.2em;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #00000060;
+    border-radius: 4px;
+}
+
+.operador {
+    background-color: #ff8c00;
+}
+
+#equals {
+    grid-column: span 4;
+    background-color: #28a745;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
